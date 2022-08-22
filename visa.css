@@ -1,0 +1,421 @@
+*{
+    box-sizing: border-box;
+   
+}
+.banner{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("images/plane.jpg");  /* source: https://pixabay.com/photos/plane-wing-flight-sky-clouds-841441/ */
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    font-family: "century Gothic", sans-serif;
+    margin-top:-50px;
+}
+
+header p{
+    color:white;
+    width:40%;
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+    font-size: 1.2em;
+}
+nav{
+    margin: 30px 10px 30px 10px;
+}
+.logo a{
+    text-decoration: none;
+    color:white;
+    transition:0.6s ease;
+}
+.logo a:hover{
+   color:#cedcde;
+    font-size: 1.1em;
+}
+.logo a:visited{
+   color:white;
+}
+
+
+nav ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 45px;
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition:0.6s ease;
+}
+nav ul li a:hover{
+    background-color: #fff;
+    color: #000;
+}
+nav ul li.active a{
+    background-color: #fff;
+    color: #000; 
+}
+.logo h1{
+    float: left;
+    width: 150px;
+    height: auto;
+    margin-top: 45px;
+    margin-left: 20px;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+header h2{
+    padding-top: 200px;
+    padding-bottom: 0;
+    font-size: 2.5em;
+    width:50%;
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
+    color: #fff;
+}
+body{
+    background-color: #cedcde;
+}
+table{
+    border: 1px solid #9fabab;
+    width: 80%;
+    margin-top:-7.3em;
+    margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    background-color: #d3dfdf;
+  
+ }
+
+caption{
+    font-size: 1.2em;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 30px;
+    font-family: "century Gothic", sans-serif;
+}
+td, th{
+    border: 1px solid #979b9b;
+    padding:15px;
+ }
+
+td, th{
+    text-align: center;
+}
+
+th{
+    font-size: 1.1em;
+    padding: 20px;
+    background: #adadad;
+}
+tr:nth-of-type(even) {
+background:#ccc8c8;
+}
+tr:nth-of-type(odd) {
+    background:#ded5d5;
+}
+
+.newscontainer{
+    display:flex;
+    flex-wrap:wrap;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.newscontainer *{
+    flex-grow: 1;
+ }
+
+.news{
+    width: 20%;
+    text-align: left;
+    line-height: 20pt;
+    margin: 18px;
+    padding: 20px;
+    background-color:#e6e8eb;
+    height: 450px;
+    font-size: 95%;
+}
+
+.newscontainer h4 a{
+    color: black;
+}
+
+.newscontainer a:hover{
+    color:#81827d;
+}
+
+#news1{
+    background-color: #e6e4e5;
+    background-image: url("images/dubai.jpg");/* source: https://www.pexels.com/photo/burj-al-arab-dubai-2857716/ */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:200px;
+    margin: -20px -20px 20px -20px;
+ 
+}
+#news2{
+    background-color: #e6e4e5;
+    background-image: url("images/canada.jpg");/* source: https://www.pexels.com/photo/canada-flag-with-mountain-range-view-756790/ */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:200px;
+    margin: -20px -20px 20px -20px;
+                    
+}
+#news3{
+    background-color: #e6e4e5;
+    background-image: url("images/london.jpg");/* source: https://www.pexels.com/photo/tower-bridge-726484/ */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:200px;
+    margin: -20px -20px 20px -20px;               
+}
+
+#news4{
+    background-color: #e6e4e5;
+    background-image: url("images/maldives.jpg");/* source: https://www.pexels.com/photo/aerial-photography-of-sand-bars-1483053/ */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:200px;
+    margin: -20px -20px 20px -20px;               
+}
+
+.review{
+    width:40%;
+    margin: 80px auto 80px auto;
+    text-align: center;
+    font-family: "century Gothic", sans-serif;
+}
+
+
+.reviewflex{
+    display:flex;
+    flex-wrap:wrap;
+    width:85%;
+    margin: 20px auto 70px auto;
+    background: #ebe8e8;  
+}
+
+.review p{
+    color: #626363;
+    font-weight: bold;
+}
+
+.reviewflex > div{
+    flex-grow: 1;
+    width:15%;
+    margin: 17px;
+    padding:10px;
+    padding-right: 15px;
+    text-align: center;
+    border-right: 0.8px solid gray;
+ }
+
+#lastreview{
+    border: none;
+}
+footer{
+    background-color: #c0c6c7;
+    padding-bottom:10px;   
+     font-family: "Times", serif;
+}
+
+.footerflexcontainer{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.footerflex, .footerlast{  
+    width:20%;
+    line-height: 22pt;
+    font-size: 95%;
+    margin-top: 20px;
+    text-align: center;
+    border-right: 1px solid white;
+    padding-left: 30px;
+     
+}
+
+.footerlast{
+    border: none;
+}
+
+footer ul li{
+    list-style: none;
+    text-align: left;
+}
+
+#footlogo{
+    float:left;
+    padding-bottom: 10px;
+}
+
+footer h3{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-right: 90px;
+    padding-left: 0;
+    font-family:"Tahoma", Arial, sans-serif;
+}
+
+.icons{
+    padding: 7px;
+    float:left;
+    margin-top:8px;
+}
+
+#copy{
+    margin-top: 50px;
+    text-align: left;
+    font-size: 90%;
+}
+
+@media only all and (max-width:768px){
+    
+    #banner, nav ul li{
+        display: block; 
+        margin: 0px;
+    }
+    
+    .logo h1, nav ul{
+        float:none;
+    }
+    .logo h1{
+        width: 100vw;
+        text-align: center;
+        margin-top: 55px;
+    }
+    nav ul li{
+        width:100%;
+        padding: 10px;
+        margin: 0px;
+        text-align: center;
+    }
+    
+    header h2{
+        margin-top:0px;
+        padding-top: 0px;
+        width:100%;
+    }
+    header p{
+        width:100%;
+    }
+    .reviewflex, .newscontainer{
+        display: block;
+        width:100vw;
+    
+    }
+    .reviewflex div, newscontainer div{
+        width:100vw;
+    }
+    
+    .news, .review{
+        width: 100%;
+        margin: 0px;
+    }
+    
+    #news1, #news2, #news3, #news4{
+        background-size: 280px 300px;
+        margin:0px;
+        width:50%;
+      
+    
+    }
+    caption{
+        width:100vw;
+        color:black;
+        font-size: 1em;
+        padding: 12px;
+        font-weight: bold;
+    }
+    
+    table, thead, tbody, th, td, tr {
+    display: block;
+}
+    
+    table{
+    width:100%;
+}
+       
+thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+       
+tr { 
+    border: 1px solid #979b9b;
+}
+       
+td {
+    border: none;
+    padding-bottom: 3%;
+    position: relative;
+    padding-left: 50%;
+}
+       
+td:before {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+}
+
+td:nth-of-type(1)::before { content: "Dubai"; font-weight: bold;}
+td:nth-of-type(2)::before { content: "UAE";font-weight: bold; }
+td:nth-of-type(3)::before { content: "Russia"; font-weight: bold;}
+td:nth-of-type(4)::before { content: "Turkey";font-weight: bold; }
+td:nth-of-type(5)::before { content: "Egypt"; font-weight: bold;}
+
+tr:nth-of-type(odd) {
+    background: #b5c1c1;
+}
+
+table{
+    margin: 50px auto;
+    background-color: #d3dfdf;           
+ }
+
+.footerflexcontainer, .footerflex, .footerlast, footer{
+    width:100%;
+    flex-direction: column;
+    margin: 0;
+    height:auto;
+    background-color: #c0c6c7;
+    border-bottom: 1px solid grey;
+}
+footer ul li{
+    width:100%;
+    display: block;
+    margin:0;
+    padding:0;
+
+}
+#footlogo{
+    margin:0;
+    padding: 0;
+    float:none;
+}    
+footer h3{
+    margin:0;
+    padding: 0;
+   
+}
+#copy{
+    text-align: center;
+    margin: 0;
+}
+ 
+}
+

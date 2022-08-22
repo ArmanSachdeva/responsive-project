@@ -1,0 +1,514 @@
+*{
+    box-sizing: border-box;  
+    
+}
+
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("images/banner.jpg");
+    /* source: https://www.marriott.com/hotels/travel/mlesi-sheraton-maldives-full-moon-resort-and-spa/ */
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    font-family: "century Gothic", sans-serif;
+    margin-top:-50px;
+}
+nav{
+    margin: 30px 10px 30px 10px;
+}
+
+header p{
+    color:white;
+    width:40%;
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+    font-size: 1.2em;
+}
+
+.logo a{
+    text-decoration: none;
+    color:white;
+    transition:0.6s ease;
+}
+.logo a:hover{
+   color:#cedcde;
+    font-size: 1.1em;
+}
+.logo a:visited{
+   color:white;
+}
+
+.main ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 45px;
+}
+.main ul li{
+    display: inline-block;
+}
+.main ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition:0.6s ease;
+}
+.main ul li a:hover{
+    background-color: #fff;
+    color: #000;
+}
+.main ul li.active a{
+    background-color: #fff;
+    color: #000; 
+}
+.logo h1{
+    float: left;
+    width: 150px;
+    height: auto;
+    margin-top: 45px;
+    font-size: 1.2em;
+    color: #fff;
+}
+header h2{
+    padding-top: 250px;
+    padding-bottom: 0;
+    font-size: 2.5em;
+    width:50%;
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
+    color: #fff;
+}
+
+
+.travel{
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#whereto{
+    padding: 10px;
+    border: none;
+    margin: 10px 30px 20px 280px;
+    font-size: 1em;
+    border-radius: 15px;
+ 
+}
+
+body{
+    background-color: #cedcde;
+}
+.main{
+    max-width: 1200px;
+    margin: auto;    
+    
+}
+
+.adventure{ 
+    width:35%;
+    margin: 40px auto 50px auto;
+    text-align: center;
+    font-family: "century Gothic", sans-serif;
+}
+
+.adventure p{
+    font-size: 1.1em;
+    color: #626363;
+    font-weight: bold;
+}
+
+.destination{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+      
+}
+
+.destination *{
+    flex-grow: 1;
+    
+ }
+.place h3{
+    padding-top:50px;
+    font-size: 1.5em;    
+    text-align: center;
+    letter-spacing: 2px;
+    color: white;
+}
+
+
+.place{  
+    width: 20%;
+    text-align: left;
+    line-height: 20pt;
+    margin-left: 18px;
+    margin-right: 18px;   
+    margin-top:4em;
+    margin-bottom: 2em;
+    background-color:#e6e4e5;
+    height: 380px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    transition: margin 1s ease-in-out, font-size 1s ease-in-out;
+}
+
+.place a{
+    text-decoration: none;
+}
+
+.place:hover{   
+    margin-top:0px;
+    font-size: 1.6em;        
+}
+
+#place1{
+    background-color: #e6e7df;
+    background-image: url("images/cairo.jpg");/* source: https://pixabay.com/photos/pyramid-outdoors-travel-sky-desert-3256883/ */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100%;
+    margin-top:-1.5em;
+    border-radius: 5px;   
+}
+
+#place3{
+    background-color: #e6e7df;
+    background-image: url("images/paris.jpg");/* source: https://www.pexels.com/photo/eiffel-tower-paris-1125212/ */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100%;
+    margin-top:-1.5em;
+    border-radius: 5px;                    
+}
+
+#place2{
+    background-color: #e6e7df;
+    background-image: url("images/japan2.jpg");/* source: https://www.pexels.com/photo/traditional-buddhist-shrine-on-lake-shore-in-garden-4090271/ */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100%;  
+    margin-top:-1.5em;
+    border-radius: 5px;  
+}
+
+#place4{
+    background-color: #e6e7df;
+    background-image: url("images/moscow2.jpg");/* source: https://www.pexels.com/photo/saint-basil-cathedral-on-red-square-at-new-year-night-3810856/ */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100%; 
+    margin-top:-1.5em;
+    border-radius: 5px;  
+}
+
+.quoteflex{
+    display: flex;
+    flex-wrap: wrap;     
+}
+
+.quoteflex *{
+    flex-grow: 1;
+    width:40%;
+ }
+
+#image1{
+    background-color: #e6e4e5;
+    background-image:linear-gradient(rgba(0.5,0.5,0,0),rgba(0.5,0.5,0,0)),url("images/summer.jpg"); /* 
+    source: https://pixabay.com/photos/summer-travel-vacation-holiday-2880261/ */
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 7em 3em 15px 4em;
+    height:270px;
+    width:450px;
+}
+
+
+#text{
+    text-align: left;
+    line-height: 22pt;
+    height: 15em;
+    font-size: 1.1em;    
+    margin: 6em 5em 10px 3em;
+    border-left: 1px solid gray;
+    height:320px;
+    padding: 70px;
+    float:right;    
+}
+
+#text::first-letter{
+    font-size: 2em;
+    color: #626363;
+    font-weight: bold;
+    font-family: "Constantia", Times, serif;
+}
+
+.bestflex{
+    display:flex;
+    flex-wrap:wrap;   
+    justify-content: center;
+    margin-top:-5em;
+    width:85%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:  #cedcde;   
+}
+
+.bestflex a{
+    text-decoration: none;
+    color:black;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1.3em;
+    font-family: "century Gothic", sans-serif;
+    transition:0.4s ease;
+}
+
+.bestflex a:visited{color:#010101;}
+.bestflex a:hover{color:#81827d;}
+
+
+.bestflex > div{
+    flex-grow: 1;
+    width:30%;
+    margin: 30px 20px 10px 10px;
+    padding: 15px;
+ }
+
+
+.bestflex p{
+    color:black;
+    font-size:1.1em;
+    padding: 10px;
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 150%; 
+}
+
+.bestflex p::first-letter{
+    font-size: 1.25em;
+    color: #626363;
+    font-weight: bold;
+    font-family: "Constantia", Times, serif;
+}
+
+.signup{
+    width:40%;
+    margin: 60px auto 60px auto;
+    text-align: center;
+   font-family: "century Gothic", sans-serif;
+}
+
+.signup p{
+    font-size: 1em;
+    color: #626363;
+    font-weight: bold;
+    padding: 10px;
+}
+.signup button{
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.signup input{
+    height: 25px;
+    width:50%;
+}
+
+footer{
+    background-color: #c0c6c7;
+    padding-bottom:10px;
+    font-family: "Times", serif;
+}
+
+.footerflexcontainer{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.footerflex, .footerlast{  
+    width:20%;
+    line-height: 22pt;
+    font-size: 95%;
+    margin-top: 20px;
+    text-align: center;
+    border-right: 1px solid white;
+    padding-left: 30px;
+     
+}
+
+.footerlast{
+    border:none;
+}
+
+footer ul li{
+    list-style: none;
+    text-align: left;
+}
+
+#footlogo{
+    float:left;
+    padding-bottom: 10px;
+}
+
+footer h3{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-right: 90px;
+    padding-left: 0;
+    font-family:"Tahoma", Arial, sans-serif;
+}
+
+.icons{
+    padding: 7px;
+    float:left;
+    margin-top:8px;
+}
+
+#copy{
+    margin-top: 50px;
+    text-align: left;
+    font-size: 90%;
+}
+
+@media only all and (max-width:768px){
+    
+    #banner, nav ul li{
+        display: block; 
+        margin: 0px;
+    }
+    
+    .logo h1, nav ul{
+        float:none;
+    }
+    .logo h1{
+        width: 100vw;
+        text-align: center;
+        margin-top: 55px;
+    }
+    nav ul li{
+        width:100%;
+        padding: 10px;
+        margin: 0px;
+        text-align: center;
+    }
+    
+    header h2{
+        margin-top:0px;
+        padding-top: 0px;
+        width:100%;
+    }
+    header p{
+        width:100%;
+    }
+    
+    #whereto{
+        width:80vw;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+   
+    .bestflex{
+        display: block;
+        width:100vw;
+        margin:0px;
+        padding: 0px;
+    }
+    
+    .bestflex p{
+         width:fit-content;
+        height:fit-content;
+        border: none;
+        padding: 5px;
+        margin: 6px;
+    }
+    
+    #image1{
+        margin: 5px;
+    }
+    #text{
+        width:fit-content;
+        height:fit-content;
+        border: none;
+        padding: 5px;
+        margin: 6px;
+    }
+    
+    .bestflex div{
+        width:100vw;
+        margin-left: 0px;
+    }
+     .travel, .adventure, .signup{
+        width: 100%;
+        margin: 4px;
+    }
+    
+    .signup{
+        margin: 20px;
+        padding: 5px;
+    }
+   
+     .destination{
+        display: block;
+        flex-direction: column;
+       
+    }
+    
+    .place{
+        width: 100%;
+        margin: 0px;
+        background-color: #cedcde;       
+        height: 300px;
+        box-shadow: none;
+        border-radius: 0px; 
+        transition: margin 1s ease-in-out, font-size 1s ease-in-out;
+      }
+    
+    #place1, #place2, #place3, #place4{        
+        background-size: 280px 300px;
+        margin:0px;
+        width:50%;
+        margin-left: auto;
+        margin-right: auto;      
+    }
+   
+.place:hover{   
+     margin-top:0px;
+    font-size: 1.6em;
+   
+}
+
+.footerflexcontainer, .footerflex, .footerlast, footer{
+    width:100%;
+    flex-direction: column;
+    margin: 0;
+    height:auto;
+    background-color: #c0c6c7;
+    border-bottom: 1px solid grey;
+}
+footer ul li{
+    width:100%;
+    display: block;
+    margin:0;
+    padding:0;
+
+}
+#footlogo{
+    margin:0;
+    padding: 0;
+    float:none;
+}    
+footer h3{
+    margin:0;
+    padding: 0;
+   
+}
+#copy{
+    text-align: center;
+    margin: 0;
+}
+    
+}

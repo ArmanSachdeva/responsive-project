@@ -1,0 +1,522 @@
+*{
+    box-sizing: border-box;   
+}
+
+.main-image{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("images/aircraft.jpg"); /* https://d3lcr32v2pp4l1.cloudfront.net/Pictures/2000xAny/4/5/7/69457_busyaircraftcshutterstock_395071.jpg*/
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    font-family: "century Gothic", sans-serif;
+    margin-top:-50px;
+}
+
+header p{
+    color:white;
+    width:40%;
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+    font-size: 1.2em;
+}
+
+nav{
+    margin: 30px 10px 30px 10px;
+}
+
+.logo a{
+    text-decoration: none;
+    color:white;
+    transition:0.6s ease;
+}
+.logo a:hover{
+   color:#cedcde;
+    font-size: 1.1em;
+}
+.logo a:visited{
+   color:white;
+}
+
+
+nav ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 45px;
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition:0.6s ease;
+}
+nav ul li a:hover{
+    background-color: #fff;
+    color: #000;
+}
+nav ul li.active a{
+    background-color: #fff;
+    color: #000; 
+}
+.logo h1{
+    float: left;
+    width: 150px;
+    height: auto;
+    margin-top: 45px;
+    margin-left: 20px;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+header h2{
+    padding-top: 35vh;
+    padding-bottom: 0;
+    font-size: 2.5em;
+    width:50%;
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
+    color: #fff;
+}
+
+body{
+    background-color: #cedcde;
+}
+
+#search-form {
+	padding:20px 0px 20px 0px;
+	width: 60%;
+	position: relative;
+}
+
+#search {
+  height: 65px;
+  background: darkcyan;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 51px 58px 29px 33px;
+}
+
+#search h1 {
+  color: #FFF;
+  margin-left:0px;
+  font-size: 1.1em
+}
+
+.flight {
+  padding: 20px;
+}
+.flight input, select {
+    color: #6B6A6A;
+}
+
+.info-box {
+  padding: 10px 0;
+  margin-top: 20px;
+  flex: 1;
+  border-right: 20px solid transparent;
+}
+
+.info-box label {
+  display: block;
+  color: #6B6A6A;
+  font-size: .9em;
+}
+
+.info-box input[type=date], input[type=submit], select {
+  border: none;
+  outline: none;
+  background: #E2E0E0;
+  margin-top: 5px;
+  width: 100%;
+  padding: 5px;
+  height: 30px;
+  border-radius: 3px;
+}
+
+.info-box input[type=text], input[type=submit], select {
+  border: none;
+  outline: none;
+  background: #E2E0E0;
+  margin-top: 5px;
+  width: 100%;
+  padding: 5px;
+  height: 30px;
+  border-radius: 3px;
+}
+
+#flight-type {
+    display: flex;
+    border-bottom: 1px dotted silver;   
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#flight-type .info-box {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#flight-depart {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dotted silver;
+}
+
+#flight-depart .info-box {
+  position: relative;
+}
+
+#depart-res, #arrive-res {
+  position: absolute;
+  background: #FFFFFF;
+}
+
+#depart-res p, #arrive-res p {
+  padding: 7px 2px;
+  border-bottom: 1px dotted silver;
+}
+
+#depart-res p:hover, #arrive-res p:hover {
+  background: #EDEDED;
+  cursor: pointer;
+}
+
+#flight-dates {  
+  border-bottom: 1px dotted silver;
+}
+
+#flight-info {
+  display: flex;
+  border-bottom: 1px dotted silver;
+}
+
+#flight-search input[type=submit]{
+    cursor: pointer;
+}
+
+#flight-search input[type=submit]:hover{
+    cursor: pointer;
+    background-color: darkcyan;
+}
+
+#flight-search .info-box {
+
+  justify-content: center;
+}
+
+#flight-search input[type=submit] {
+  background: Tomato;
+  color: white;
+  padding: 0;
+  height: 60px;
+  font-size: 1.2em;
+  border-radius: 26px 26px 53px 53px;
+  width: 110%;
+}
+
+/* Calender */
+#calender {
+  border: 3px solid red;
+  padding: 5px;
+  opacity: 0;
+  background: #FFFFFF;
+  position: absolute;
+  transition: opacity .3s;
+  pointer-events: none;
+}
+#calender .nav {
+  padding: 3px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+#calender .nav button {
+  background: #FF3240;
+  border: none;
+  outline: none;
+  color: #FFFFFF;
+  padding: 5px 8px;
+  font-weight: 600;
+  border-radius: 3px;
+}
+table {
+  border: 1px solid #DBDBDB;
+  background: #F4F4F4;
+}
+table td {
+  border: 1px solid #DBDBDB;
+  padding: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+.normal {
+  color: rgba(0,0,0,.8)
+}
+.today {
+  background: #FF3240;
+  color: #FFFFFF;
+}
+.closed {
+  color: #DBDBDB;
+  cursor: default;
+}
+.picked {
+  background: green;
+}
+#month {
+  display: inline-block;
+}
+
+#confirm {
+  width: 500px;
+  padding: 20px;
+  border: 5px solid #55AF3A;
+  margin: 20px auto;
+  opacity: 0;
+}
+#confirm h3 {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+#confirm p {
+  padding: 10px;
+}
+#confirm strong {
+  font-weight: 600;
+}
+
+main{
+width: 100%;
+display: flex;
+justify-content: center;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f2eded;
+  font-family: "Quicksand", sans-serif;
+}
+
+.container {
+  margin: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.1s;
+  width: 30%;
+  text-align: center;
+  border-radius: 9px;
+  background: #f2eded;
+  box-shadow: -8px -8px 16px #b6b2b2, 8px 8px 16px #ffffff;
+}
+
+.container:hover {
+  border-radius: 9px;
+  background: #f2eded;
+  box-shadow: -8px 8px 16px #b6b2b2, 8px -8px 16px #ffffff;
+}
+
+.img1 {
+  overflow: auto;
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+
+input[type="submit"] {
+  margin-bottom: 15px;
+  width: 75px;
+  height: 35px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  border-radius: 9px;
+  background: #e3dede;
+  box-shadow: 47px 47px 94px #d3cece, -47px -47px 94px #f3eeee;
+}
+
+input[class="card_btn"]:hover {
+  content: "Submit Brother or Sister";
+  border-radius: 9px;
+  color: aliceblue;
+  background: linear-gradient(145deg, #b80000, #f54848);
+  box-shadow: 20px 20px 60px #c1bdbd, -20px -20px 60px #ffffff;
+}
+
+p {
+  margin: 15px;
+}
+
+span {
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.offers_heading{
+	text-align:center;
+	font-size: 2em;
+    margin:20px;
+	
+	color: darkslategray;
+}
+
+.offers{
+	display:flex;
+	flex-wrap: wrap;
+	padding: 20px 0px 50px 0px;
+}
+
+section h3{
+    display: none;
+}
+
+
+footer{
+    background-color: #c0c6c7;
+    padding-bottom:10px;
+    font-family: "Times", serif;
+   
+}
+
+.footerflexcontainer{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.footerflex, .footerlast{  
+    width:20%;
+    line-height: 22pt;
+    font-size: 95%;
+    margin-top: 20px;
+    text-align: center;
+    border-right: 1px solid white;
+    padding-left: 30px;
+     
+}
+
+.footerlast{
+    border:none;
+}
+
+footer ul li{
+    list-style: none;
+    text-align: left;
+}
+
+#footlogo{
+    float:left;
+    padding-bottom: 10px;
+}
+
+footer h3{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-right: 90px;
+    padding-left: 0;
+    font-family:"Tahoma", Arial, sans-serif;
+}
+
+.icons{
+    padding: 7px;
+    float:left;
+    margin-top:8px;
+}
+
+#copy{
+    margin-top: 50px;
+    text-align: left;
+    font-size: 90%;
+}
+
+
+@media only all and (max-width:768px){
+    
+    #banner, nav ul li{
+        display: block; 
+        margin: 0px;
+    }
+    
+    .logo h1, nav ul{
+        float:none;
+    }
+    .logo h1{
+        width: 100vw;
+        text-align: center;
+        margin-top: 55px;
+    }
+    nav ul li{
+        width:100%;
+        padding: 10px;
+        margin: 0px;
+        text-align: center;
+    }
+    
+    header h2{
+        margin-top:0px;
+        padding-top: 0px;
+        width:100%;
+    }
+    header p{
+        width:100%;
+    }
+
+.footerflexcontainer, .footerflex, .footerlast, footer{
+    width:100%;
+    flex-direction: column;
+    margin: 0;
+    height:auto;
+    background-color: #c0c6c7;
+    border-bottom: 1px solid grey;
+}
+footer ul li{
+    width:100%;
+    display: block;
+    margin:0;
+    padding:0;
+
+}
+#footlogo{
+    margin:0;
+    padding: 0;
+    float:none;
+}    
+footer h3{
+    margin:0;
+    padding: 0;
+   
+}
+#copy{
+    text-align: center;
+    margin: 0;
+}
+    #flight-type {
+  flex-direction: column;
+  border-bottom: 1px dotted silver;
+        
+}
+    #flight-type .info-box{
+        width:100%;
+    }
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 90%;
+    margin: 30px;
+  }
+}
+

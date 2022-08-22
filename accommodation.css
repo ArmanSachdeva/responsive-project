@@ -1,0 +1,595 @@
+*{
+    box-sizing: border-box;  
+    
+}
+
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("images/accommodation.jpg");
+/*    source:https://res.cloudinary.com/dxssqb6l8/image/upload/v1605294054/young-woman-enjoying-beautiful-scenery-of-lago-di-braies-italy-picjumbo-com_aa0fvw.jpg*/
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    font-family: "century Gothic", sans-serif;
+    margin-top:-50px;
+}
+
+header p{
+    color:white;
+    width:40%;
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+    font-size: 1.2em;
+}
+
+.logo a{
+    text-decoration: none;
+    color:white;
+    transition:0.6s ease;
+}
+.logo a:hover{
+   color:#cedcde;
+    font-size: 1.1em;
+}
+.logo a:visited{
+   color:white;
+}
+
+.main ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 45px;
+}
+.main ul li{
+    display: inline-block;
+}
+.main ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition:0.6s ease;
+}
+.main ul li a:hover{
+    background-color: #fff;
+    color: #000;
+}
+.main ul li.active a{
+    background-color: #fff;
+    color: #000; 
+}
+.logo h1{
+    float: left;
+    width: 150px;
+    height: auto;
+    margin-top: 45px;
+    font-size: 1.2em;
+    color: #fff;
+}
+header h2{
+    padding-top: 250px;
+    padding-bottom: 0;
+    font-size: 2.5em;
+    width:50%;
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
+    color: #fff;
+}
+nav{
+    margin: 30px 10px 30px 10px;
+}
+
+body{
+    background-color: #cedcde;
+}
+.main{
+    max-width: 1200px;
+    margin: auto;    
+    
+}
+
+.stepscontainer{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    margin-bottom: 5px; 
+    margin-top: 2em;
+}
+
+.stepscontainer *{
+    flex-grow: 1;
+    
+ }
+.steps h3{
+    padding-top:50px;
+    font-size: 1.5em;    
+    text-align: center;
+    letter-spacing: 2px;
+    color: white;
+}
+
+
+.steps{  
+    width:10%;
+    text-align: left;
+    line-height: 20pt;
+    margin-left: 18px;
+    margin-right: 18px;   
+    margin-top:4em;
+    margin-bottom: 2em;
+    background-color:#e6e4e5;
+    height: 380px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    transition:0.6s ease;
+  
+}
+
+.steps a{
+    text-decoration: none;
+}
+
+
+#imgVilla{
+    margin: auto;
+    max-height: 300px;
+    display: inline-block;
+    border-radius: 30px;
+    opacity: 80%;
+}
+
+#imgVilla:hover{
+    max-height: 325px;
+    opacity: 100%;
+    transition: 0.4s ease;
+}
+
+#imgHotel{
+    margin: auto;
+    max-height: 300px;
+    display: inline-block;
+    border-radius: 30px;
+    opacity: 80%;
+    
+    
+}
+
+#imgHotel:hover{
+    max-height: 325px;
+    opacity: 100%;
+    transition: 0.4s ease;
+    
+}
+
+
+#imgResort{
+    margin: auto;
+    max-height: 300px;
+    min-width: 400px;
+    display: inline-block;
+    border-radius: 30px;
+    opacity: 80%;
+    
+    
+}
+
+#imgResort:hover{
+    max-height: 325px;
+    width: 425px;
+    opacity: 100%;
+    transition: 0.4s ease;
+}
+
+
+#villa{
+    background-color: #e6e7df;
+    background-image: url("images/villa.jpg");
+    /* source: https://pixabay.com/photos/villa-dream-villa-dream-home-194671/ */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100%;
+    margin-top:-1.5em;
+    border-radius: 5px;
+   
+}
+.review{
+    width:40%;
+    margin: 13em auto 20px auto;
+    text-align: center;
+    font-family: "century Gothic", sans-serif;
+}
+
+.review p{
+        color: #626363;
+    font-weight: bold;
+}
+
+.besthotels{
+    width:40%;
+    margin: 3em auto 20px auto;
+    text-align: center;
+    font-family: "century Gothic", sans-serif;
+}
+
+.besthotels p{
+        color: #626363;
+    font-weight: bold;
+}
+
+
+#hotel{
+    background-color: #e6e7df;
+    background-image: url("images/hotel.jpg");
+    /* source: https://pixabay.com/photos/hotel-room-curtain-green-furniture-1979406/ */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100%;
+    margin-top:-1.5em;
+    border-radius: 5px;
+
+   
+}
+#resort{
+    background-color: #e6e7df;
+    background-image: url("images/resorts.jpg");
+/*    source: https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100%;  
+    margin-top:-1.5em;
+    border-radius: 5px;
+    
+}
+
+.steps:hover{
+   transform: translateY(10px); 
+}
+
+#marg{
+    margin-top: 40px;
+    height: 100px;
+    width: auto;
+}
+
+#staysrch{
+    padding: 10px 10px 10.5px 10px;
+    border: none;
+    font-size: 1.05em;
+    border-radius: 15px 0 0 15px;
+}
+
+#staysrch:focus{
+    outline: none;
+}
+
+#datesbkg2{
+    display: inline;
+    padding: 10px 10px 10.5px 10px;
+    border: none;
+    font-family: sans-serif;
+    font-size: 0.8em;
+    border-radius: 0 15px 15px 0;
+  
+}
+
+#datesbkg2:focus{
+    outline: none;
+}
+
+#datesbkg1{
+    display: inline;
+
+    padding: 10px 10px 10.5px 10px;
+    border: none;
+    font-family: sans-serif;
+    font-size: 0.8em;
+    border-radius: 0 ;
+   
+   
+}
+
+#datesbkg1:focus{
+    outline: none;
+}
+
+
+.search {
+    margin-top:10em;
+    width: 80%;
+    height:30vh;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:  #ebe8e8;
+    text-align: center;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3em;
+}
+
+
+.packageflex{
+    display:flex;
+    flex-wrap:wrap;
+   
+    margin: 5em auto 70px auto;
+    background: #ebe8e8;  
+}
+
+.packageflex img{
+     transition: width 0.8s ease-in-out, height 0.8s ease-in-out;
+}
+
+#best{
+    margin-left: 5px;
+    font-family: "century Gothic", sans-serif;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#best p {
+    padding: 15px 10px 15px 15px;
+    text-align: center;
+    font-size: 0.9em;
+  
+}
+.packageflex > div{
+    flex-grow: 1;
+    width:15%;
+    margin: 15px 15px 15px 5px;
+    padding:10px;
+    padding-right: 15px;
+    text-align: center;
+ }
+.packageflex h4{
+    font-family: "century Gothic", sans-serif;
+}
+.packageflex img{
+     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+     border-radius: 5px;
+    transition: transform 500ms;
+}
+.packageflex img:hover{
+   transform: translateY(5px); 
+}
+
+aside{
+    margin-top:auto;
+    margin-bottom: auto;
+    width:10%;
+    background-color: azure;
+    padding: 10px;
+    text-align: center;
+    margin-right: 12px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+aside a{
+    text-decoration: none;
+    font-weight: bold;
+    color:black;
+}
+
+
+.ofrblck{
+    background-color: white;
+    height: 150px;
+ margin: 15px 15px 15px 5px;
+    padding:10px;
+    display: inline-block;
+  
+    margin-bottom: 20px;
+    border-radius: 18px;
+     flex-grow: 1;
+    width:10%;
+  
+}
+
+.ofrblck  img{
+    display: block;
+    margin: auto;
+    margin-top: 1.5%;
+    height: 80px;
+    width: 80px;
+    border-radius: 20px;
+}
+
+.ofrblck p{
+   
+    font-size: 12pt;
+    text-align: center;
+}
+
+#mainofr{
+    display: flex;
+    margin-bottom: 4%;
+    padding: 20px 0px;
+    background: #ebe8e8; 
+    margin-top: 4em;
+   flex-wrap:wrap;
+
+}
+
+footer{
+    background-color: #c0c6c7;
+    padding-bottom:10px;
+    font-family: "Times", serif;
+}
+
+.footerflexcontainer{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.footerflex, .footerlast{  
+    width:20%;
+    line-height: 22pt;
+    font-size: 95%;
+    margin-top: 20px;
+    text-align: center;
+    border-right: 1px solid white;
+    padding-left: 30px;
+     
+}
+
+.footerlast{
+    border:none;
+}
+
+footer ul li{
+    list-style: none;
+    text-align: left;
+}
+
+#footlogo{
+    float:left;
+    padding-bottom: 10px;
+}
+
+footer h3{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-right: 90px;
+    padding-left: 0;
+    font-family:"Tahoma", Arial, sans-serif;
+}
+.icons{
+    padding: 7px;
+    float:left;
+    margin-top:8px;
+}
+
+#copy{
+    margin-top: 50px;
+    text-align: left;
+    font-size: 90%;
+}
+
+@media only all and (max-width:768px){
+    
+    #banner, nav ul li{
+        display: block; 
+        margin: 0px;
+    }
+    
+    .logo h1, nav ul{
+        float:none;
+    }
+    .logo h1{
+        width: 100vw;
+        text-align: center;
+        margin-top: 55px;
+    }
+    nav ul li{
+        width:100%;
+        padding: 10px;
+        margin: 0px;
+        text-align: center;
+    }
+    
+    header h2{
+        margin-top:0px;
+        padding-top: 0px;
+        width:100%;
+    }
+    header p{
+        width:100%;
+    }
+    
+    .search{
+        width:90%;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+        margin-bottom: 2em;
+    }
+    .search input{
+        width:80%;
+        margin: 10px;
+    }
+    
+    #staysrch{
+        margin-top:2em;
+        border-radius: 0px;
+    }
+    
+    #datesbkg2{
+        margin-bottom: 2em;
+        border-radius: 0px;
+    }
+    .packageflex, .reviewflex{
+        display: block;
+        width:100vw;
+      }
+    
+    .stepscontainer{
+        display:block;
+        
+    }
+    #mainofr{
+        flex-direction: column;
+    }
+    
+    .steps{
+        width:80vw;
+        margin-left: auto;
+       margin-right: auto;
+    }
+    .ofrblck{
+        width:75vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+   
+    .packageflex img{
+        height:35vh;
+        width:60vw;
+    }
+    .packageflex div,  .reviewflex div, .besthotels{
+        width:100vw;
+    }
+  
+    .review{
+        width: 100%;
+        margin-top:16em;
+    }
+    
+    aside{
+        width:35%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+.footerflexcontainer, .footerflex, .footerlast, footer{
+    width:100%;
+    flex-direction: column;
+    margin: 0;
+    height:auto;
+    background-color: #c0c6c7;
+    border-bottom: 1px solid grey;
+}
+footer ul li{
+    width:100%;
+    display: block;
+    margin:0;
+    padding:0;
+
+}
+#footlogo{
+    margin:0;
+    padding: 0;
+    float:none;
+}    
+footer h3{
+    margin:0;
+    padding: 0;
+   
+}
+#copy{
+    text-align: center;
+    margin: 0;
+}
+}
